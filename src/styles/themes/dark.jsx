@@ -8,7 +8,16 @@ export default {
         'static1': 'rgba(255, 255, 255, 0.1)'
     },
     fonts: {
-        title: "Merriweather Sans, sans-serif",
-        body: "Noto Sans, sans-serif"
+        title: "Merriweather Sans",
+        body: "Noto Sans"
+    },
+    fontSize: {
+        sm: '0.750rem',
+        base: '1rem',
+        h5: '1.333rem',
+        h4: '1.777rem',
+        h3: '2.369rem',
+        h2: '3.158rem',
+        h1: '4.210rem'
     }
 }

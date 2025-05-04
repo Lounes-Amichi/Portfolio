@@ -1,13 +1,18 @@
-import {Container, LogoContainer} from './HeaderStyles.jsx';
+import { Container, LogoContainer, LogoLink } from './HeaderStyles.jsx';
+import { DiCssdeck } from "react-icons/di";
+
+
 
 function Header(){
 
     return (
         <Container>
             <LogoContainer>
-                <p>header</p>
+                <LogoLink>
+                    <DiCssdeck size='2.369rem' />
+                    <span>Portfolio</span>
+                </LogoLink>
             </LogoContainer>
-            <a href="#">Home</a>
         </Container>
     );
 }

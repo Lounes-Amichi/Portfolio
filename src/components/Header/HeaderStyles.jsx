@@ -1,11 +1,13 @@
 import styled from 'styled-components';
 
-const text = props => props.theme.colors.text
-const background = props => props.theme.colors.background
-const primary = props => props.theme.colors.primary
-const secondary = props => props.theme.colors.secondary
-const accent = props => props.theme.colors.accent
-const static1 = props => props.theme.colors.static1
+const text = props => props.theme.colors.text;
+const background = props => props.theme.colors.background;
+const primary = props => props.theme.colors.primary;
+const secondary = props => props.theme.colors.secondary;
+const accent = props => props.theme.colors.accent;
+const static1 = props => props.theme.colors.static1;
+const title = props => props.theme.fonts.title;
+const body = props => props.theme.fonts.body;
 
 export const Container = styled.div`
     display:grid;
@@ -21,4 +23,12 @@ export const LogoContainer = styled.div`
     grid-area: 1 / 1 / 2 / 2;
     display: flex;
     flex-direction: row;
+    align-content: center;
+`;
+
+export const LogoLink = styled.a`
+    display: flex;
+    align-items: center;
+    color: ${text};
+    font-family: ${title};
 `;
