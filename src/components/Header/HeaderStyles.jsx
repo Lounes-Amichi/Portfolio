@@ -1,13 +1,10 @@
 import styled from 'styled-components';
 
 const text = props => props.theme.colors.text;
-const background = props => props.theme.colors.background;
-const primary = props => props.theme.colors.primary;
-const secondary = props => props.theme.colors.secondary;
 const accent = props => props.theme.colors.accent;
 const static1 = props => props.theme.colors.static1;
 const title = props => props.theme.fonts.title;
-const body = props => props.theme.fonts.body;
+const h4 = props => props.theme.fontSize.h4;
 
 export const Container = styled.div`
     display:grid;
@@ -19,16 +16,46 @@ export const Container = styled.div`
     border-bottom: 1px solid ${static1} ;
 `;
 
-export const LogoContainer = styled.div`
+export const LogoContainer = styled.a`
     grid-area: 1 / 1 / 2 / 2;
     display: flex;
     flex-direction: row;
     align-content: center;
-`;
-
-export const LogoLink = styled.a`
-    display: flex;
-    align-items: center;
+    justify-content: center;
     color: ${text};
     font-family: ${title};
+    font-size: ${h4};
 `;
+
+export const NavContainer = styled.div`
+    grid-area: 1 / 2 / 2 / 5;
+    display: flex;
+    justify-content: space-around;
+`;
+
+export const NavLink = styled.a`
+    display: flex;
+    font-family: ${title};
+    align-items: center;
+    transition: 0.4s ease;
+    &:hover {
+        color: ${accent};
+    };
+`
+
+export const SocialsCont = styled.div`
+    grid-area: 1 / 5 / 2 / 6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+`
+
+export const SocialIcon = styled.a`
+    border-radius: 50px;
+
+    transition: 0.4s ease;
+    &:hover {
+        color: ${accent};
+        transform: scale(1.2);
+    };
+`

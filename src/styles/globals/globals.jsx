@@ -50,12 +50,7 @@ li {
     font-family: 'Noto Sans';
     color: ${props => props.theme.colors.text};
     margin: 0px;
-    margin-top: 3px;
-    text-align: center;
 }
-
-
-
 
 `;
 
