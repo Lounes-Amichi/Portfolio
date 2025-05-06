@@ -3,6 +3,7 @@ import styled from 'styled-components';
 const text = props => props.theme.colors.text;
 const accent = props => props.theme.colors.accent;
 const static1 = props => props.theme.colors.static1;
+const background = props => props.theme.colors.background;
 const title = props => props.theme.fonts.title;
 const h4 = props => props.theme.fontSize.h4;
 
@@ -14,6 +15,10 @@ export const Container = styled.div`
     padding: 1rem;
     padding-top: 2rem;
     border-bottom: 1px solid ${static1} ;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    background-color: ${background};
 `;
 
 export const LogoContainer = styled.a`

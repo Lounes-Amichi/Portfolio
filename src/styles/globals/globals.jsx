@@ -19,6 +19,7 @@ body {
 h1, h2, h3, h4, h5 {
     font-family: ${title};
     font-weight: 700;
+    color: ${props => props.theme.colors.text};
 }
 
 html {font-size: 100%;} /* 16px */

@@ -1,14 +1,13 @@
-import { Section, SectionTitle, SectionText } from "../../styles/globals/components.jsx";
-import { Span } from './AboutStyles.jsx'
+import { Section, SectionTitle, SectionText, Span } from "../../styles/globals/components.jsx";
 
 function About() {
 
     return (
         <Section id="About">
             <SectionTitle $main>
-                <Span $accent>Hey!</Span>
+                <Span $accent>Hey! </Span> <br />
+                I'm Lounès Amichi.
             </SectionTitle>
-            <SectionTitle> I'm Lounès Amichi.</SectionTitle>
             <SectionText>I am a computer science student specializing in web and software development.</SectionText>
         </Section>
     );

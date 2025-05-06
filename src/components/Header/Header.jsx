@@ -2,21 +2,22 @@ import { Container, LogoContainer, NavContainer, NavLink, SocialsCont, SocialIco
 import { DiCssdeck } from "react-icons/di";
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 
-
 function Header(){
 
     return (
         <Container>
-            <LogoContainer>
-                    <DiCssdeck size='2.369rem' />
+            <LogoContainer href="#">
+                    <DiCssdeck size='2.369rem'/>
                     <span>Portfolio</span>
             </LogoContainer>
             <NavContainer>
                 <NavLink href="#About">About</NavLink>
-                <NavLink href="#Projects">Projects</NavLink>
                 <NavLink href="#Techs">Technologies</NavLink>
+                <NavLink href="#Projects">Projects</NavLink>
+                {/* 
                 <NavLink href="#CCs">Certifications</NavLink>
                 <NavLink href="#Contact">Contact</NavLink>
+                */}
             </NavContainer>
             <SocialsCont>
                 <SocialIcon href="https://www.github.com/Lounes-Amichi">
